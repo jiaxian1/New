@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tvlay_login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvedt_login_name"
+            android:hint="请输入用户昵称"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tvlay_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:inputType="textPassword"
+            android:id="@+id/tvedt_login_password"
+            android:layout_marginTop="25dp"
+            android:hint="用户密码：6到12位字符"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        />
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <Button
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_login_register"
+            android:layout_weight="1"
+            android:background="@drawable/select_red_button"
+            android:text="注册"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_login_forget_password"
+            android:layout_weight="1"
+            android:background="@drawable/select_red_button"
+            android:text="忘记密码"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/btn_login_login"
+            android:layout_weight="1"
+            android:background="@drawable/select_red_button"
+            android:text="登陆"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18dp"
+            android:textColor="@color/colorBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码" />
+        <CheckBox
+            android:id="@+id/ch_rember_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</LinearLayout>

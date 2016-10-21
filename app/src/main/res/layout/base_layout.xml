@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_base_head"
+            android:background="@color/colorRed"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp" >
+
+            <ImageView
+                android:src="@mipmap/ic_title_home_default"
+                android:id="@+id/iv_base_left"
+                android:layout_width="25dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:id="@+id/tv_base_tittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="资讯" />
+            <Button
+                android:textColor="@color/colorWhite"
+                android:background="@null"
+                android:visibility="gone"
+                android:id="@+id/btn_comment_number"
+                android:layout_gravity="center_vertical"
+                android:text="跟帖数量"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+            <Button
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:id="@+id/btn_add_favorite_base"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/news_menu"
+                android:layout_width="8dp"
+                android:layout_height="30dp" />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_title_share_default"
+                android:id="@+id/iv_base_right"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_base_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+</LinearLayout>

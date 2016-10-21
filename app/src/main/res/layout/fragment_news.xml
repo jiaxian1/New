@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_military"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="军事"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_society"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="社会"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_stock"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="股票"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_fund"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="基金"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_phone"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_epl"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="英超"
+            android:textSize="14dp" />
+
+        <Button
+            android:background="@drawable/select_text_color"
+            android:id="@+id/btn_news_sort_nba"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="NBA"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/select" />
+    </LinearLayout>
+
+    <edu.feicui.news.news.XList.XListView
+        android:id="@+id/lv_home_news_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

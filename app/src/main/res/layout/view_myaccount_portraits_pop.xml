@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#C1C5CA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="25dp"
+            android:text="设置您的头像"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_call_camera"
+        android:background="#C1C5CA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/photo_take"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="调用相机拍照"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:id="@+id/ll_select_photo"
+        android:background="#C1C5CA"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/photo_sel"
+            android:layout_width="40dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="从照片库中选择"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
